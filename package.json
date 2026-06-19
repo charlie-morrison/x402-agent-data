@@ -1,0 +1,37 @@
+{
+  "name": "x402-agent-data",
+  "version": "6.0.0",
+  "description": "Pay-per-call data tools for AI agents (crypto signal, web reader, GitHub SEO audit), settled per call via x402 (USDC on Base). Exposed as a remote MCP server + plain HTTP. No API key, no signup.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "x402",
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "agent-economy",
+    "usdc",
+    "base",
+    "pay-per-call",
+    "micropayments"
+  ],
+  "author": "Charlie Morrison",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlie-morrison/x402-agent-data.git"
+  },
+  "homepage": "https://x402.charliemorrison.dev",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@x402/core": "^2.14.0",
+    "@x402/evm": "^2.14.0",
+    "@x402/express": "^2.14.0",
+    "express": "^5.2.1",
+    "viem": "^2.52.2",
+    "x402-express": "^1.2.0"
+  }
+}
