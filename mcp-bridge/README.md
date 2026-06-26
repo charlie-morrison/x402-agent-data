@@ -16,7 +16,7 @@ A tiny **stdio MCP server** that bridges any MCP client (Claude Desktop, Cursor,
   "mcpServers": {
     "agent-web-reader": {
       "command": "npx",
-      "args": ["-y", "agent-web-reader-mcp"]
+      "args": ["-y", "github:charlie-morrison/agent-web-reader-mcp"]
     }
   }
 }
@@ -25,7 +25,7 @@ A tiny **stdio MCP server** that bridges any MCP client (Claude Desktop, Cursor,
 Or run directly:
 
 ```bash
-npx -y agent-web-reader-mcp
+npx -y github:charlie-morrison/agent-web-reader-mcp
 ```
 
 Without payment each tool returns the x402 **402 challenge** (scheme `exact`, USDC on Base mainnet). Supply the base64 `X-PAYMENT` header value as the `x402_payment` argument to settle and get the result.
